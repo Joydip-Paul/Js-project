@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&family=Roboto:wght@700&display=swap');
+
+        body {
+            background-color: rebeccapurple;
+        }
+
+        button {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            width: 200px;
+            height: 50px;
+            font-size: 30px;
+            background-color: rgb(54, 11, 97);
+            border: none;
+            outline: none;
+            color: #fff;
+            cursor: pointer;
+            text-transform: uppercase;
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        button:hover {
+            background-color: rebeccapurple;
+            border: 2px solid #fff;
+            color: rgb(18, 1, 36);
+        }
+
+        .countdown-container {
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            height: 80vh;
+            width: 100vw;
+        }
+
+        .countdown-container ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .countdown-container ul li {
+            margin-left: 5px;
+            background-color: rgb(255, 255, 255);
+            padding: 50px;
+        }
+
+        .countdown-container ul li span {
+            font-size: 50px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <button onclick="start()">Start</button><br> -->
+    <h1 id="demo"></h1>
+
+
+    <div class="countdown-container">
+        <ul>
+            <li>
+                <span id="days"></span><br>
+                <strong>Days</strong>
+            </li>
+
+            <li>
+                <span id="hour"></span><br>
+                <strong>Hours</strong>
+            </li>
+
+            <li>
+                <span id="minute"></span><br>
+                <strong>Minutes</strong>
+            </li>
+
+            <li>
+                <span id="second"></span><br>
+                <strong>Seconds</strong>
+            </li>
+        </ul>
+    </div>
+
+
+    <script>
+        const EndDate = new Date('Sep 29,2020,12:00:00').getTime();
+        console.log("EndDate is: " + EndDate);
+
+        function CountDown() {
+            const RecentTime = new Date().getTime();
+            console.log("RecentTime is: " + RecentTime);
+            const Difference = EndDate - RecentTime;
+            console.log("Difference of EndDate and RecentTime: " + Difference);
+
+            const days = Math.floor(Difference / (1000 * 60 * 60 * 24));
+            console.log("Days Left: " + days);
+
+            const hours = Math.floor((Difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            console.log("Hours Left: " + hours);
+
+            const minutes = Math.floor((Difference % (1000 * 60 * 60)) / (1000 * 60));
+            console.log("Minutes Left: " + minutes);
+
+            const seconds = Math.floor((Difference % (1000 * 60)) / (1000));
+            console.log("Seconds Left: " + seconds);
+
+            if (days < 0) {
+                document.getElementById('a').innerHTML = 'Finished';
+            }
+            // else {
+            //     document.getElementById('demo').innerHTML = days + " Days " + hours + " Hours " + minutes + " Minutes " + seconds + " Seconds";
+            // }
+            else {
+                document.getElementById('days').innerHTML = days;
+                document.getElementById('hour').innerHTML = hours;
+                document.getElementById('minute').innerHTML = minutes;
+                document.getElementById('second').innerHTML = seconds;
+            }
+        }
+        //CountDown();
+        setInterval(CountDown, 1000);
+        //start();
+    </script>
+</body>
+
+</html>

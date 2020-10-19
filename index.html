@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+     -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="#" class="logo">ExpoHut</a>
+        <div class="frame">
+            <span id="hour"></span>
+            <span id="minute"></span>
+            <span id="second"></span>
+        </div>
+        <ul>
+            <!-- <div class="dropdown">
+                <li><a href="#">Services</a></li>
+                <div id="mydropdown" class="dropdown-content">
+                    <li><a href="#">One</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                    <li><a href="#">Four</a></li>
+                </div>
+            </div> -->
+
+            <li><a href="#" id="register">Register</a></li>
+            <li><a href="#" id="login">Login</a></li>
+            <div>
+
+
+                <!--Humberber-->
+                <button id="HumbergerButton"><i class="fa fa-search" id="search"></i></button>
+
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#">Google</a></li>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                    <input type="text" name="" placeholder="Search"><a href="#"><i class="fa fa-search"
+                            id="HamburgerSearch"></i></a>
+                </nav>
+            </div>
+
+        </ul>
+        
+    </header>
+    <div class="carousel">
+        <div class="image-container" id="imgs">
+            <img src="images/one.jpg" alt="">
+            <img src="images/three.jpg" alt="">
+            <img src="images/two.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- CountSown Area is Started-->
+    <div class="countdownArea">
+         <!-- <button onclick="start()">Start</button><br> -->
+    <h1 id="CountTItle">CountDown Begin</h1>
+
+
+    <div class="countdown-container">
+        
+        <ul>
+            <li>
+                <span id="dd"></span><br>
+                <strong>Days</strong>
+            </li>
+
+            <li>
+                <span id="hh"></span><br>
+                <strong>Hours</strong>
+            </li>
+
+            <li>
+                <span id="mm"></span><br>
+                <strong>Minutes</strong>
+            </li>
+
+            <li>
+                <span id="ss"></span><br>
+                <strong>Seconds</strong>
+            </li>
+        </ul>
+    </div>
+
+    </div>
+    <!-- CountDown Area is End -->
+    <!-- Carousel -->
+    <!-- <div id="slider1" class="carousel slide" data-ride="carousel">
+        <a href="#slider1" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#slider1" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#slider1" data-slide-to="0"></li>
+            <li data-target="#slider1" data-slide-to="1"></li>
+            <li data-target="#slider1" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="images/bg2.png" class="d-block img-fluid" alt="First slide">
+                <div class="carousel-caption text">
+                    <h1>Artistry</h1>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/bg3.jpg" class="d-block img-fluid" alt="Second slide">
+                <div class="carousel-caption text">
+                    <h3>Joydip Paul</h3>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/bg1.jpg" class="d-block img-fluid" alt="Third slide">
+                <div class="carousel-caption text">
+                    <h3>ExpoHut</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- Login Modal -->
+    <div class="container">
+        <div class="login-container" id="modal">
+            <p>Login <span><i class="fa fa-remove" id="close" style="font-size:15px"></i></span></p>
+            <h2>Login With Your Site Account</h2>
+            <input type="email" name="" id="username" class="form-control" placeholder="Enter Email"
+                autocomplete="off"><br>
+            <input type="password" name="" id="password" class="form-control" placeholder="Enter password">
+            <input type="checkbox"><span>Remember Me</span>
+            <a href="#" class="lostpassword">Lost your password</a><br><br>
+            <input type="submit" name="" id="btn" class="btn btn-primary btn-lg btn-block" value="Login">
+            <p style="text-align: center;">Not a member yet? <a href="#">Register Now</a></p>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+
+    <div class="Register-container" id="RegModal">
+        <form class="form" id="form">
+            <p>Register <span><i class="fa fa-remove" id="close2" style="font-size:15px"></i></span></p>
+            <h2>Register To Start Learning</h2>
+            <div class="control">
+                <!-- <label for="username">Username</label> -->
+                <input type="text" placeholder="Enter Username" id="RegUsername" autocomplete="off"
+                    class="form-control">
+                <small id="small">Error</small><br>
+            </div>
+
+            <div class="control">
+                <!-- <label for="email">Email</label> -->
+                <input type="text" placeholder="Enter Email" id="email" autocomplete="off" class="form-control">
+                <small>Error</small><br>
+            </div>
+
+            <div class="control">
+                <!-- <label for="password">Password</label> -->
+                <input type="password" placeholder="Enter Password" id="RegPassword" autocomplete="off"
+                    class="form-control">
+                <small>Error</small><br>
+            </div>
+
+            <div class="control">
+                <!-- <label for="password2">Confirm Passwod</label> -->
+                <input type="password" placeholder="Enter password again" id="password2" autocomplete="off"
+                    class="form-control">
+                <small>Error</small><br>
+            </div>
+            <input type="submit" name="" id="btn" class="btn btn-primary btn-lg btn-block" value="Sign Up">
+            <p style="text-align: center;">Are you a member? <a href="#modal">Login Now</a></p>
+        </form>
+    </div>
+
+    <!-- Team Section -->
+    <div class="team">
+        <div class="container">
+            <h2>Our Team</h2>
+            <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, quaerat?
+            </p>
+            <div class="team-column">
+                <div class="col-1-3">
+                    <a href="#"><img src="images/team1.jpg" class="teamimg" alt=""></a>
+                    <div class="about">
+                        <h3>Alison Perker</h3>
+                        <p>Lorem ipsum dolor sit amet,<br> </p>
+                    </div>
+                    <button class="teambtn">view details</button>
+                </div>
+
+                <div class="col-1-3" id="team2">
+                    <a href="#"><img src="images/team2.jpg" alt=""></a>
+                    <div class="about">
+                        <h3>Alison Perker</h3>
+                        <p>Lorem ipsum dolor sit amet,<br> </p>
+                    </div>
+                    <button class="teambtn">view details</button>
+                </div>
+
+                <div class="col-1-3">
+                    <a href="#"><img src="images/team1.jpg" alt=""></a>
+                    <div class="about">
+                        <h3>Alison Perker</h3>
+                        <p>Lorem ipsum dolor sit amet,<br> </p>
+                    </div>
+                    <button class="teambtn">view details</button>
+
+                </div>
+                <div class="team-details">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, obcaecati. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Product -->
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
